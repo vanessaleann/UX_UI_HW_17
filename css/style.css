@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 2%;
     max-width: 1728px;
     margin: 0 auto;
     z-index: 1;
@@ -24,7 +24,7 @@ header {
   }
   
   nav li {
-    margin: 0 10px;
+    margin: 0 40px;
   }
   
   nav li a {
@@ -40,14 +40,46 @@ header {
     width: 100%;
     height: 469px;
     background-color: #F3EB63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
+
+  .text-container {
+    position: absolute;
+    width: 471px;
+    height: 404px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 3%;
+    z-index: 2;
+  }
+  
+  .text {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .text span.italic {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  /* home photo of myself below */
   
   .image-container img {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 36%;
     height: auto;
-    z-index: -1;
   }
   
   @media screen and (max-width: 768px) {
